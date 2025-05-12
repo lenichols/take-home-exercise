@@ -41,7 +41,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone git@github.com:lenichols/take-home-exercise.git
