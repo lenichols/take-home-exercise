@@ -1,66 +1,50 @@
-# 📝 Customer Persona Experience App — Take-Home Exercise
+# Customer Persona Generator
 
-Welcome! This repository is for the **Customer Persona Experience App** take-home exercise.
-
-Your goal is to build an interactive app that generates customer personas and simulates a chat experience where the user helps the persona solve a product or service challenge.
+This is a Next.js 15 app that generates interactive customer personas using LLMs via Fireworks AI. Users can input company traits or choose a sample company, receive AI-generated personas, and simulate conversations to help solve product or service challenges.
 
 ---
 
-## 🎯 Objective
+## Getting Started
 
-Demonstrate your skills in:
-- System architecture
-- UI design
-- Data handling
-- User interaction flows
-- AI integration
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🔹 Requirements
-
-### Step 1: Company Input
-- Collect the **company name** and **company characteristics** (free text or tags).
-
-### Step 2: Persona Generation
-Generate a customer persona containing:
-- Name
-- Age
-- Gender
-- Location
-- Job Title
-- Interests
-- Challenges
-
-### Step 3: Chat Experience
-- Present a challenge from the persona related to the company's products/services.
-- Allow the user to respond and assist the persona.
-- Support at least 2–3 back-and-forth interactions.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ---
 
-## 🔹 Technical Constraints
+## Features
 
-- **React** app (any framework — Next.js, Remix, etc.).
-- **AI-powered** persona generation and chat experience.
-- Use **any AI model you want** free or paid.
-- **Server-side component required** (no client-only apps).
-
----
-
-## 🔍 Evaluation Criteria
-
-- Clean, usable UI design.
-- Code readability and structure.
-- Effective use of AI.
-- Creativity and user experience.
+- Persona generation powered by Fireworks AI (LLaMA v3 8B)
+- Chat interface to simulate helping a customer persona
+- Typing delay to mimic real conversation pacing
+- Responsive UI built with TailwindCSS and Flowbite
+- Regenerate personas or switch between them freely
 
 ---
 
-## 📦 Submission Instructions
+## Tech Stack
 
-1. Fork this repository.
-2. Push code to your fork.
-3. Include a `README.md` (this file) updated with any additional details you'd like to share.
-4. Provide clear instructions for how to run the app locally.
-5. No need to include any API keys. We will use our own for testing.
+- **Framework:** Next.js 15 (App Router, TypeScript)
+- **AI Integration:** LangChain + Fireworks AI
+- **Styling:** Tailwind CSS + Flowbite React
+- **Animation:** Framer Motion
+
+---
+
+## 📦 Installation
+
+```bash
+git clone git@github.com:lenichols/take-home-exercise.git
+cd take-home-exercise
+npm install
+```
